@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+   <mods:titleInfo>
+      <mods:nonSort>NONSORT (OPTIONAL)</mods:nonSort>
+      <mods:title>TITLE</mods:title>
+      <mods:subTitle>SUBTITLE (OPTIONAL)</mods:subTitle>
+   </mods:titleInfo>
+   <mods:name type="personal" usage="primary">
+      <mods:namePart>AUTHOR</mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text">author</mods:roleTerm>
+      </mods:role>
+   </mods:name>
+   <mods:name type="corporate">
+      <mods:namePart>Univesrity of Richmond. DEPARTMENT NAME (from https://as.richmond.edu/about-school/departments/index.html)</mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text">issuing body</mods:roleTerm>
+      </mods:role>
+   </mods:name>
+   <mods:typeOfResource>text</mods:typeOfResource>
+   <mods:originInfo>
+      <mods:place>
+         <mods:placeTerm type="text">Richmond, VA</mods:placeTerm>
+      </mods:place>
+      <mods:publisher>University of Richmond</mods:publisher>
+      <mods:dateIssued>YEAR</mods:dateIssued>
+      <mods:issuance>monographic</mods:issuance>
+   </mods:originInfo>
+   <mods:language>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+   </mods:language>
+   <mods:physicalDescription>
+      <mods:extent>1 online resource (XX pages)</mods:extent>
+      <mods:internetMediaType>application/pdf</mods:internetMediaType>
+   </mods:physicalDescription>
+   <mods:note type="statementOfResponsibility">[BY] AUTHOR</mods:note>
+   <mods:note type="thesis">Honors thesis University of Richmond YEAR.</mods:note>
+
+   <!--If applicable-->
+   <mods:note type="bibliography">Includes bibliographical references (pages XX-XX) and index.</mods:note>
+
+   <!--If closed to campus only access include below note-->
+   <mods:note type="restrictionOnAccess">Restricted Thesis: Campus only access</mods:note>
+   <mods:abstract>Abstract: copy from UR Scholarship</mods:abstract>
+
+   <!--2+ Subjects Preferred Unless Topic Scope is Very Narrow-->
+   <mods:subject authority="lcsh">
+      <mods:topic valueURI="">SUBJECT</mods:topic>
+   </mods:subject>
+
+   <!--Keep this subject for every record-->
+   <mods:subject>
+      <mods:genre valueURI="
+      http://id.loc.gov/authorities/genreForms/gf2014026039" authority="lcgft">Academic theses</mods:genre>
+   </mods:subject>
+   
+   <mods:location>
+      <mods:url>UR Scholarship URL</mods:url>
+   </mods:location>
+</mods:mods>
