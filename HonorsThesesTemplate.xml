@@ -35,13 +35,15 @@
       <mods:extent>1 online resource (XX pages)</mods:extent>
       <mods:internetMediaType>application/pdf</mods:internetMediaType>
    </mods:physicalDescription>
+   
+   <!--245 $c-->
    <mods:note type="statementOfResponsibility">[BY] AUTHOR</mods:note>
    <mods:note type="thesis">Honors thesis University of Richmond YEAR.</mods:note>
 
-   <!--If applicable-->
-   <mods:note type="bibliography">Includes bibliographical references (pages XX-XX) and index.</mods:note>
+   <!--504 if applicable-->
+   <mods:note type="bibliography">Includes bibliographical references (pages XX-XX).</mods:note>
 
-   <!--If closed to campus only access include below note-->
+   <!--506 - if closed to campus only access include below note and use import profile for closed theses-->
    <mods:note type="restrictionOnAccess">Restricted Thesis: Campus only access</mods:note>
    <mods:abstract>Abstract: copy from UR Scholarship</mods:abstract>
 
@@ -50,7 +52,7 @@
       <mods:topic valueURI="">SUBJECT</mods:topic>
    </mods:subject>
 
-   <!--Keep this subject for every record-->
+   <!--Keep this genre subject for every record-->
    <mods:subject>
       <mods:genre valueURI="
       http://id.loc.gov/authorities/genreForms/gf2014026039" authority="lcgft">Academic theses</mods:genre>
