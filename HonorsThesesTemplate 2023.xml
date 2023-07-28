@@ -25,7 +25,7 @@
          <mods:placeTerm type="text">Richmond, VA</mods:placeTerm>
       </mods:place>
       <mods:publisher>University of Richmond</mods:publisher>
-      <mods:dateIssued>YEAR</mods:dateIssued>
+      <mods:dateIssued>2023</mods:dateIssued>
    </mods:originInfo>
    <mods:language>
       <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
@@ -39,7 +39,7 @@
    <mods:note type="statementOfResponsibility">[BY] AUTHOR</mods:note>
 
    <!--502 note-->
-   <mods:note type="thesis">Honors thesis University of Richmond YEAR.</mods:note>
+   <mods:note type="thesis">Honors thesis University of Richmond 2023.</mods:note>
 
    <!--504 if applicable-->
    <mods:note type="bibliography">Includes bibliographical references (pages XX-XX).</mods:note>  
