@@ -14,7 +14,7 @@
       </mods:role>
    </mods:name>
    <mods:name type="corporate">
-      <mods:namePart>Univesrity of Richmond. DEPARTMENT NAME (from https://as.richmond.edu/about-school/departments/index.html)</mods:namePart>
+      <mods:namePart>University of Richmond. Department of (from https://as.richmond.edu/about-school/departments/index.html)</mods:namePart>
       <mods:role>
          <mods:roleTerm type="text">issuing body</mods:roleTerm>
       </mods:role>
