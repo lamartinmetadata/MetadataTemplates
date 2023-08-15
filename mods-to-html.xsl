@@ -24,7 +24,7 @@
             <h1>
                 <xsl:if test="mods:mods/mods:titleInfo[not(@type)]/mods:nonSort">
                     <xsl:value-of select="mods:mods/mods:titleInfo[not(@type)]/mods:nonSort"
-                    />&#160;</xsl:if>
+                    /></xsl:if>
                 <xsl:value-of select="mods:mods/mods:titleInfo[not(@type)]/mods:title"/>
                 <xsl:if test="mods:mods/mods:titleInfo[not(@type)]/mods:subTitle">
                         :&#160;<xsl:value-of
@@ -41,7 +41,7 @@
                     <td>
                         <xsl:if test="mods:mods/mods:titleInfo[not(@type)]/mods:nonSort">
                             <xsl:value-of select="mods:mods/mods:titleInfo[not(@type)]/mods:nonSort"
-                            />&#160;</xsl:if>
+                            /></xsl:if>
                         <xsl:value-of select="mods:mods/mods:titleInfo[not(@type)]/mods:title"/>
                         <xsl:if test="mods:mods/mods:titleInfo[not(@type)]/mods:subTitle">
                                 :&#160;<xsl:value-of
