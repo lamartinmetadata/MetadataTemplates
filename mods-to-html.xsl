@@ -48,9 +48,9 @@
                                 select="mods:mods/mods:titleInfo[not(@type)]/mods:subTitle"/>
                         </xsl:if>
                         <xsl:if
-                            test="mods:mods/mods:note[contains(@type, 'statement of responsibility')]"
-                            > &#160;/&#160;<xsl:value-of
-                                select="mods:mods/mods:note[@type = 'statement of responsibility']"
+                            test="mods:mods/mods:note[contains(@type, 'statementOfResponsibility')]"
+                            >&#160;/&#160;<xsl:value-of
+                                select="mods:mods/mods:note[@type = 'statementOfResponsibility']"
                             />
                         </xsl:if>
                     </td>
@@ -229,6 +229,28 @@
                         </td>
                     </tr>
                 </xsl:for-each>
+                
+                <xsl:if test="mods:mods/mods:note[contains(@type, 'bibliography')]">
+                    <tr>
+                        <td>
+                            <b>Bibliographical Note</b>
+                        </td>
+                        <td>                            
+                            <xsl:value-of select="mods:mods/mods:note[contains(@type, 'bibliography')]"/>                            
+                        </td>
+                    </tr>                
+                </xsl:if>
+                
+                <xsl:if test="mods:mods/mods:note[contains(@type, 'thesis')]">
+                    <tr>
+                        <td>
+                            <b>Dissertation Note</b>
+                        </td>
+                        <td>                            
+                            <xsl:value-of select="mods:mods/mods:note[contains(@type, 'thesis')]"/>                            
+                        </td>
+                    </tr>                
+                </xsl:if>
 
                 <xsl:for-each select="mods:mods/mods:abstract">
                     <tr>
@@ -249,7 +271,8 @@
                             <xsl:value-of select="."/>
                         </td>
                     </tr>
-                </xsl:for-each>
+                </xsl:for-each>                
+                
                 <xsl:for-each select="mods:mods/mods:subject">
                     <tr>
                         <td colspan="2">
@@ -275,6 +298,17 @@
                         </td>
                     </tr>
                 </xsl:for-each>
+                
+                <xsl:if test="mods:mods/mods:note[contains(@type, 'restrictionOnAccess')]">
+                    <tr>
+                        <td>
+                            <b>Access Note</b>
+                        </td>
+                        <td>                            
+                            <xsl:value-of select="mods:mods/mods:note[contains(@type, 'restrictionOnAccess')]"/>                            
+                        </td>
+                    </tr>                
+                </xsl:if>
 
                 <xsl:for-each select="mods:mods/mods:relatedItem[@type = 'series']">
                     <tr>
