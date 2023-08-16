@@ -262,6 +262,7 @@
                     <xsl:apply-templates select="mods:genre"/>
                     <xsl:apply-templates select="mods:name"/>
                     <xsl:apply-templates select="mods:temporal"/>
+                    <xsl:apply-templates select="mods:titleInfo"></xsl:apply-templates>
                 </xsl:for-each>
 
                 <xsl:for-each select="mods:mods/mods:accessCondition">
@@ -376,6 +377,17 @@
             </td>
             <td>
                 <xsl:value-of select="."/>
+            </td>
+        </tr>
+    </xsl:template>
+    
+    <xsl:template match="mods:titleInfo">
+        <tr>
+            <td>
+                <b>- Subject (Title)</b>
+            </td>
+            <td>
+                <xsl:value-of select="."/>                
             </td>
         </tr>
     </xsl:template>
