@@ -251,6 +251,28 @@
                         </td>
                     </tr>                
                 </xsl:if>
+                
+                <xsl:if test="mods:mods/mods:note[contains(@type, 'date')]">
+                    <tr>
+                        <td>
+                            <b>Event Information</b>
+                        </td>
+                        <td>                            
+                            <xsl:value-of select="mods:mods/mods:note[contains(@type, 'date')]"/>                            
+                        </td>
+                    </tr>                
+                </xsl:if>
+                
+                <xsl:if test="mods:mods/mods:note[contains(@type, 'creation/production credits')]">
+                    <tr>
+                        <td>
+                            <b>Production Staff</b>
+                        </td>
+                        <td>                            
+                            <xsl:value-of select="mods:mods/mods:note[contains(@type, 'creation/production credits')]"/>                            
+                        </td>
+                    </tr>                
+                </xsl:if>
 
                 <xsl:for-each select="mods:mods/mods:abstract">
                     <tr>

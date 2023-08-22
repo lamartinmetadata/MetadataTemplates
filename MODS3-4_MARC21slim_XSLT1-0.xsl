@@ -1169,6 +1169,8 @@
 					<xsl:when test="@type='thesis'">502</xsl:when>
 					<xsl:when test="@type='bibliography'">504</xsl:when>
 					<xsl:when test="@type='restrictionOnAccess'">506</xsl:when>
+					<xsl:when test="@type='date'">518</xsl:when>
+					<xsl:when test="@type='creation/production credits'">508</xsl:when>
 					<xsl:otherwise>500</xsl:otherwise>
 				</xsl:choose>
 			</xsl:with-param>
@@ -1259,7 +1261,8 @@
 	<xsl:template match="mods:subject[local-name(*[1])='topic']">
 		<xsl:call-template name="datafield">
 			<xsl:with-param name="tag">650</xsl:with-param>
-			<xsl:with-param name="ind1">1</xsl:with-param>
+			<xsl:with-param name="ind1"> </xsl:with-param>
+			<xsl:with-param name="ind2">0</xsl:with-param>
 			<xsl:with-param name="subfields">
 				<marc:subfield code="a">
 					<xsl:value-of select="*[1]"/>
@@ -1318,6 +1321,11 @@
 									<xsl:value-of select="."/>
 								</marc:subfield>
 							</xsl:for-each>
+							<xsl:if test="//mods:mods/mods:subject/mods:titleInfo/mods:title">							
+								<marc:subfield code="t">
+									<xsl:value-of select="//mods:mods/mods:subject/mods:titleInfo/mods:title"/>
+								</marc:subfield>							
+							</xsl:if>
 							<xsl:apply-templates select="*[position()>1]"/>
 						</xsl:with-param>
 					</xsl:call-template>	
