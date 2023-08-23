@@ -45,8 +45,6 @@
    <mods:originInfo>
       <mods:dateIssued>YYYY-MM-DD</mods:dateIssued>
       <mods:dateIssued qualifier="questionable">YYYY-MM-DD</mods:dateIssued>
-      <mods:dateCaptured>2023-06-26</mods:dateCaptured>
-   </mods:originInfo>
    
    <!-- Occasional pieces are in other languages. Record using MARC language code. -->
    
