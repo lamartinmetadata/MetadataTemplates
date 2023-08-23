@@ -5,7 +5,7 @@
    
    <!-- This template is used for letters and other text resources in the Van Vechten/Lutz collection -->
    
-   <!-- For title, use ArchiveSpace collection as a guide. However, if title on Archivespace is overly long and the information is conveyed elsewhere, feel free to truncate. URL for collection:  https://archives.richmond.edu/repositories/4/resources/36 -->
+   <!-- For title, use ArchiveSpace collection as a guide, if item is available on Aspace. However, if title on Archivespace is overly long and the information is conveyed elsewhere, feel free to truncate. URL for collection:  https://archives.richmond.edu/repositories/4/resources/36 -->
    
    <mods:titleInfo>
       <mods:title>TITLE</mods:title>
@@ -36,11 +36,11 @@
       <mods:role>
          <mods:roleTerm type="text"></mods:roleTerm>
       </mods:role>
-   </mods:name>
+   </mods:name>     
    
    <mods:typeOfResource>text</mods:typeOfResource>
    
-   <!-- Date issued is date of piece. Some dates may be questionable, for that use qualifier attribute, as left in template below. If not questionable, use line without qualifier and delete line with qualifier. -->
+   <!-- Date issued is date of piece. Some dates may be questionable, for that use qualifier attribute, as left in template below- use brackets and notes if necessary. If date is certain, enter normally using line without qualifier, delete line with qualifier. -->
    
    <mods:originInfo>
       <mods:dateIssued>YYYY-MM-DD</mods:dateIssued>
@@ -92,7 +92,7 @@
          >https://archives.richmond.edu/repositories/4/archival_objects/4515</mods:url>
    </mods:location>
 
-   <!-- Related Item entry for transcription of each piece. Use title from titleInfo and add "Transcript of" to beginning. Identifier is filename of transcript. --> 
+   <!-- Related Item entry for transcription of each piece. Use title supplied in titleInfo and add "Transcript of" to beginning. Identifier is filename of transcript. --> 
    
    <mods:relatedItem type="otherFormat" displayLabel="Transcript">
       <mods:titleInfo>
