@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+   
+   <!-- This template is used for letters and other text resources in the Van Vechten/Lutz collection -->
+   
+   <!-- For title, use ArchiveSpace collection as a guide. However, if title on Archivespace is overly long and the information is conveyed elsewhere, feel free to truncate. URL for collection:  https://archives.richmond.edu/repositories/4/resources/36 -->
+   
+   <mods:titleInfo>
+      <mods:title>TITLE</mods:title>
+   </mods:titleInfo>
+   
+   <!--Creator fields. Frequently used include: -->
+   
+   <mods:name type="personal" valueURI="
+      http://id.loc.gov/authorities/names/n78095475">
+      <mods:namePart>Van Vechten, Carl, 1880-1964</mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text">XXX</mods:roleTerm>
+      </mods:role>
+   </mods:name>
+   
+   <mods:name type="personal" valueURI="
+      http://id.loc.gov/authorities/names/n2013003947">
+      <mods:namePart>Lutz, Mark, 1901-1969</mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text"></mods:roleTerm>
+      </mods:role>
+   </mods:name>
+  
+  <!-- Clear template included for other names -->
+   
+   <mods:name type="" valueURI="">
+      <mods:namePart></mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text"></mods:roleTerm>
+      </mods:role>
+   </mods:name>
+   
+   <mods:typeOfResource>text</mods:typeOfResource>
+   
+   <!-- Date issued is date of piece. Some dates may be questionable, for that use qualifier attribute, as left in template below. If not questionable, use line without qualifier and delete line with qualifier. -->
+   
+   <mods:originInfo>
+      <mods:dateIssued>YYYY-MM-DD</mods:dateIssued>
+      <mods:dateIssued qualifier="questionable">YYYY-MM-DD</mods:dateIssued>
+      <mods:dateCaptured>2023-06-26</mods:dateCaptured>
+   </mods:originInfo>
+   
+   <!-- Occasional pieces are in other languages. Record using MARC language code. -->
+   
+   <mods:language>
+      <mods:languageTerm authority="iso639-2b" type="code">eng</mods:languageTerm>
+   </mods:language>
+      
+   
+   <mods:physicalDescription>
+      <mods:extent>1 online resource (X pages)</mods:extent>
+      <mods:internetMediaType>application/pdf</mods:internetMediaType>
+   </mods:physicalDescription>
+   
+   <!-- Some pieces have descriptions that can be used or modified for the abstract element. Otherwise, supply a basic description. -->
+   
+   <mods:abstract>DESCRIPTION</mods:abstract>
+   
+   <!-- Placeholder for any additional notes -->
+   
+   <mods:note>NOTE</mods:note>
+   
+   <mods:subject authority="lcsh">
+      <mods:topic></mods:topic>
+   </mods:subject
+   
+   <!-- Keep this section in for all records -->
+   
+   <mods:name type="corporate"
+      valueURI="http://id.loc.gov/authorities/names/no2014131139">
+      <mods:namePart>Boatwright Memorial Library (University of Richmond)</mods:namePart>
+      <mods:role>
+         <mods:roleTerm type="text">encoder</mods:roleTerm>
+      </mods:role>
+   </mods:name>  
+   <mods:location>
+      <mods:physicalLocation>MS-1, Carl Van Vechten - Mark Lutz Collection, Book Arts, Archives, and Rare Books, Boatwright Memorial Library, University of Richmond, Richmond, Virginia</mods:physicalLocation>
+   </mods:location>
+   
+   <!-- Add url of piece in Archivespace. The URL will look similar to  "https://archives.richmond.edu/repositories/4/archival_objects/4531" -->
+   
+   <mods:location>
+      <mods:url displayLabel="Physical copy record in ArchivesSpace"
+         >https://archives.richmond.edu/repositories/4/archival_objects/4515</mods:url>
+   </mods:location>
+
+   <!-- Related Item entry for transcription of each piece. Use title from titleInfo and add "Transcript of" to beginning. Identifier is filename of transcript. --> 
+   
+   <mods:relatedItem type="otherFormat" displayLabel="Transcript">
+      <mods:titleInfo>
+         <mods:title>Transcript of TITLE</mods:title>
+      </mods:titleInfo>
+      <mods:identifier>CVV-Lutz_B001_F001_TR.pdf</mods:identifier>
+   </mods:relatedItem>
+   
+   <!--Access condition stays identical in every record -->
+   
+   <mods:accessCondition>Digital materials included in collections provided by the library are
+      generally open to the public, but are intended for educational and research purposes only.
+      Any other use, including but not limited to reproduction, redistribution, publication, or
+      transmission, is prohibited without specific written consent.</mods:accessCondition>
+</mods:mods>
