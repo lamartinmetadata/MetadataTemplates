@@ -68,7 +68,7 @@
    
    <mods:subject authority="lcsh">
       <mods:topic></mods:topic>
-   </mods:subject
+   </mods:subject></mods:originInfo>
    
    <!-- Keep this section in for all records -->
    
