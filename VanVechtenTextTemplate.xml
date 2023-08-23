@@ -45,6 +45,7 @@
    <mods:originInfo>
       <mods:dateIssued>YYYY-MM-DD</mods:dateIssued>
       <mods:dateIssued qualifier="questionable">YYYY-MM-DD</mods:dateIssued>
+   </mods:originInfo>
    
    <!-- Occasional pieces are in other languages. Record using MARC language code. -->
    
@@ -68,7 +69,7 @@
    
    <mods:subject authority="lcsh">
       <mods:topic></mods:topic>
-   </mods:subject></mods:originInfo>
+   </mods:subject>
    
    <!-- Keep this section in for all records -->
    
