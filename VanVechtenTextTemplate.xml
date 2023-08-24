@@ -40,11 +40,14 @@
    
    <mods:typeOfResource>text</mods:typeOfResource>
    
-   <!-- Date issued is date of piece. Some dates may be questionable, for that use qualifier attribute, as left in template below- use brackets and notes if necessary. If date is certain, enter normally using line without qualifier, delete line with qualifier. -->
+   <!-- Date issued is date of piece. Some dates may be questionable, for that use qualifier attribute, as left in template below- use brackets and notes if necessary. If date is certain, enter normally using line without qualifier, delete line with qualifier. 
+   
+   Date captured is date of digitization, take from date on pdf.-->
    
    <mods:originInfo>
       <mods:dateIssued>YYYY-MM-DD</mods:dateIssued>
       <mods:dateIssued qualifier="questionable">YYYY-MM-DD</mods:dateIssued>
+      <mods:dateCaptured></mods:dateCaptured>
    </mods:originInfo>
    
    <!-- Occasional pieces are in other languages. Record using MARC language code. -->
