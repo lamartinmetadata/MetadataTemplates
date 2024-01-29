@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+
+<!-- Template for the Boatwright Papers
+    
+    Beginning with title. Most documents will need a supplied title. Since the collection is largely letters, the format for those is provided in the title field. 
+    For other types of documents, provide an appropriate title or use an existing title if applicable. -->
+        
+    <mods:titleInfo>
+        <mods:title>Letter dated [Month Day, Year] from [Sender] to [Recipient}</mods:title>
+    </mods:titleInfo>
+    
+    <!-- In most cases, Frederic Boatwright will be either tue author or the addressee of the material.
+        If Boatwright is not named as a recipient or is not the author, remove this field. -->
+    
+    <mods:name type="personal" valueURI="http://id.loc.gov/authorities/names/no2009184089">
+        <mods:namePart>Boatwright, Frederic William</mods:namePart>
+        <mods:namePart type="date">1868-1951</mods:namePart>
+        <mods:role>
+            <mods:roleTerm type="text">author</mods:roleTerm>
+            <mods:roleTerm>addressee</mods:roleTerm>
+        </mods:role>
+    </mods:name>
+    
+    <!-- Second empty name field for other authors, entities, or addressees --> 
+    
+    <mods:name type="corporate" valueURI="[Value]">
+        <mods:namePart></mods:namePart>
+        <mods:role>
+            <mods:roleTerm>addressee</mods:roleTerm>
+        </mods:role>
+    </mods:name>
+
+    <!-- Many of these documents will be sent on official letterhead from Richmond College, so the place and publisher for Richmond College has been provided below.
+        For any other place of origin, change or delete these fields as needed. 
+        Date issued refers to  the date on the piece. If date is unclear, use RDA language. Contact Leigh Ann with any questions. -->
+    
+    <mods:originInfo>
+        <mods:place>
+            <mods:placeTerm type="text">Richmond, Va.</mods:placeTerm>
+        </mods:place>
+        <mods:publisher>Richmond College</mods:publisher>
+        <mods:dateIssued>[Year-Month-Day]</mods:dateIssued>        
+    </mods:originInfo>
+    
+    <!-- All pieces in this collection have an electronic form of item and are in PDF format, so those two fields remain constant.
+        Extent varies by piece. Update to include page count. -->
+    
+    <mods:physicalDescription>
+        <mods:form authority="marcform">electronic</mods:form>
+        <mods:internetMediaType>application/pdf</mods:internetMediaType>
+        <mods:extent>[#] page[s}</mods:extent>
+    </mods:physicalDescription>
+    
+    <!-- In the abstract field, provide a description for the item. 
+        Example: 
+        <mods:abstract>A letter from President Boatwright to the architectural firm Cram, Goodhue and Ferguson, sent with enclosed sketches and letters containing input from Chemistry and Physics professors on building plans. President Boatwright discusses traveling to Boston to meet with the architects that month.</mods:abstract>
+        -->
+    
+    <mods:abstract>[Description]</mods:abstract>
+    
+    <!-- Pull subjects (preferably at least two) from http://id.loc.gov. See the MAP for detailed subject instructions. -->
+    
+    <mods:subject authority="lcsh" valueURI="">
+        <mods:topic></mods:topic>
+    </mods:subject>
+    
+    <!-- Include at least one genre heading if possible Usually personal or business correspondence, both provided below. -->
+    
+    <mods:genre authority="lcgft" valueURI="
+        http://id.loc.gov/authorities/genreForms/gf2014026054">Business correspondence</mods:genre>
+    
+    <mods:genre authority="lcgft" valueURI="http://id.loc.gov/authorities/genreForms/gf2014026141">Personal correspondence</mods:genre>
+    
+    <!-- The following fields are constant for the entire Boatwright collection. Leave for each PDF. -->
+    
+    <mods:typeOfResource>text</mods:typeOfResource>
+    <mods:name type="corporate" valueURI="http://id.loc.gov/authorities/names/no2014131139">
+        <mods:namePart>Boatwright Memorial Library (University of Richmond)</mods:namePart>
+        <mods:role>
+            <mods:roleTerm type="text">encoder</mods:roleTerm>
+        </mods:role>
+    </mods:name>    
+    <mods:location>
+        <mods:physicalLocation>Virginia Baptist Historical Society</mods:physicalLocation>
+    </mods:location>
+    <mods:note>Transcripts of Boatwright Correspondence materials available by request. Contact DigitalEngagement@richmond.edu for more information.</mods:note>
+    <mods:accessCondition>Digital materials included in collections provided by the library are generally open to the public, but are intended for educational and research purposes only. Any other use, including but not limited to reproduction, redistribution, publication, or transmission, is prohibited without specific written consent.</mods:accessCondition>
+</mods:mods>
